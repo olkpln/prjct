@@ -1,0 +1,33 @@
+﻿.catmenu:before,
+.catmenu:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 16px;
+	border-bottom: 2px solid #fff;
+	height: 9px;
+	width: 24px;
+}
+.catmenu:before {
+	top: 16px;
+	border-top: 2px solid #fff;
+	transform-origin: left top;
+	transition: border-bottom-color 1.5s step-end, transform 1.5s ease, width 1.5s ease;
+}
+.catmenu:after {
+	bottom: 16px;
+	transform-origin: left bottom;
+	transition: all 1.5s ease;
+}
+.open.catmenu:before,
+.open.catmenu:after {
+	width: 31px;
+}
+.open.catmenu:before {
+	border-bottom-color: transparent;
+	transform: rotate(45deg);
+	transition: border-bottom-color 1.5s step-start, transform 1.5s ease, width 1.5s ease;
+}
+.open.catmenu:after {
+	transform: rotate(-45deg);
+}

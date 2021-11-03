@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Главная страница проекта</title>
+        
+        <link href="css/style.css" rel="stylesheet">
+
+        <link href="css/animations.css" rel="stylesheet">
+        
+        <link href="css/adaptive.css" rel="stylesheet">
+        
+        <script src="js/jquery-3.6.0.min.js"></script>
+        
+        <script src="js/defs.js"></script>
+        
+        <script src="js/main.js"></script>
+        
+
+    </head>
+
+    <body>
+        <header>
+            <div class="navigation">
+
+                <a href="index.html" class="logo"><img alt="" src="img/logo.svg" alt="" /></a>
+                <nav>
+                    <ul class="header-menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#ourmenu">Меню</a></li>
+                        <li><a href="item.html">Афиша</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>  
+            </div>
+            <h1>Сеть крафтовых баров "СВОИ"</h1>
+        </header>
+        
+        <main>
+            <section>
+                <div class="container">
+                    <p class="article1">Ваш заказ</p>
+                </div>
+            </section>
+            
+            <section class="table">
+                <div class="container">
+                    <table></table>
+                </div>
+            </section>
+            
+            <section class="form">
+                <div class="container">
+                    <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                        <fieldset>
+                            <legend class="ord1">Данные получателя</legend>
+                            
+                            <input type="text" id="name" placeholder="Реквизиты б. карты">
+                            
+                            <input type="text" id="phone" placeholder="Телефон">
+                            
+                            <input type="text" id="mail" placeholder="Электронная почта">
+                            
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend class="ord1">Дата</legend>
+                            
+                            <input type="text" id="date" value="02-11-2021" disabled>
+                        </fieldset>
+                        
+                        <p>
+                            <button type="button" class="ord1">Оплатить заказ</button>
+                        </p>
+                    </form>
+                </div>
+            </section>
+            
+
+
+
+        </main>
+        
+        <footer>
+                <div class="container-f">
+                    <div class="blocks-f">
+                        <div class="block-f">
+                            <a href="index.html" class="logo"><img alt="" src="img/logo.svg" alt="" /></a>
+                        </div>
+                        
+                        <div class="block-f">
+                            <ul class="menu-f">
+                                <li><b>Города</b></li>
+                                <li><a href="catalog.html">Москва</a></li>
+                                <li><a href="catalog.html">Сергиев Посад</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="block-f">
+                            <ul class="menu-f">
+                                <li><b>Контакты</b></li>
+                                <li>По вопросам работы сети: <a href="mailto:info@svoi.bar">info@svoi.bar</a></li>
+                                <li><a href="contacts.html">Адреса спотов и баров</a</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </body>
+</html>
